@@ -1,1 +1,9 @@
+spring:
+  security:
+    user:
+      name: user
+      password: test
 
+logging:
+  level:
+    org.springframework.web: TRACE
