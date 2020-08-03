@@ -1,4 +1,4 @@
-package me.study.oauth2;
+package me.study.oauth2.entity;
 
 import lombok.Data;
 
