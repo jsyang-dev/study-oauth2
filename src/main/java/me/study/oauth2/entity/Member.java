@@ -1,6 +1,8 @@
 package me.study.oauth2.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -9,6 +11,8 @@ import java.io.Serializable;
 
 @Data
 @Entity
+@NoArgsConstructor
+@AllArgsConstructor
 public class Member implements Serializable {
 
     @Id
@@ -17,12 +21,4 @@ public class Member implements Serializable {
     String name;
     String username;
     String remark;
-
-    public Member() {}
-
-    public Member(String name, String username, String remark) {
-        this.name = name;
-        this.username = username;
-        this.remark = remark;
-    }
 }
