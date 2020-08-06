@@ -42,6 +42,7 @@ public class OAuth2AuthorizationServer extends AuthorizationServerConfigurerAdap
 
     @Bean
     public TokenStore tokenStore() {
+        // TODO: 토큰 DB로 관리
         return new InMemoryTokenStore();
     }
 
